@@ -1,0 +1,8 @@
+- name: Chocolatey - Starting Deploy #Software - Starting Deploy
+  become: true
+  hosts: winteste #nome do grupo que esta no arquivo host. Observe que também temo suma pasta chamada group_vars,
+  #esta contém um arquivo .yml com o mesmo nome do grupo, vai ser necessário alterar as informações de autenticação de acordo com suas configurações.
+  gather_facts: yes
+  
+  roles:
+  - installchocolatey

@@ -1,0 +1,13 @@
+# tasks file for installchocolatey
+- name: install the googlechrome
+  win_chocolatey:
+    name: googlechrome
+    state: present
+#    state: absent #descomentando essa opção e comentando o state #present na linha a cima, essa opção vai desinstalar o pacote que foi instalado via chocolatey.
+
+- name: install the firefox
+  win_chocolatey:
+    name: firefox
+    state: present
+#    state: absent #descomentando essa opção e comentando o state #present na linha a cima, essa opção vai desinstalar o pacote que foi instalado via chocolatey.
+...
